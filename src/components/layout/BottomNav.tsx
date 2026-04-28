@@ -5,12 +5,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Heart, TrendingUp, MapPin, Sparkles, User } from 'lucide-react';
 
+// src/components/layout/BottomNav.tsx
+
 const NAV_ITEMS = [
-  { href: '/', label: 'Care', icon: Heart },
-  { href: '/insights', label: 'Insights', icon: TrendingUp },
-  { href: '/booking', label: 'Booking', icon: MapPin },
-  { href: '/baby-mode', label: 'Baby', icon: Sparkles },
-  { href: '/profile', label: 'EHR', icon: User },
+  { href: '/', label: 'Reja', icon: Heart },          // Care -> Reja (yoki Parvarish)
+  { href: '/insights', label: 'Tahlil', icon: TrendingUp }, // Insights -> Tahlil
+  { href: '/booking', label: 'Qabul', icon: MapPin },       // Booking -> Qabul (yoki Shifokor)
+  { href: '/baby-mode', label: 'Bolajon', icon: Sparkles }, // Baby -> Bolajon
+  { href: '/profile', label: 'Profil', icon: User },        // EHR -> Profil (yoki Karta)
 ];
 
 export function BottomNav() {
